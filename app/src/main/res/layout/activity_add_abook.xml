@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    tools:context="org.dongari.libaccesssw.AddABookActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If know that you are adding new book to the library, then click Add A New Book button. Otherwise, click Add More Books button."
+                android:id="@+id/infoTextViewId"
+                android:textSize="18dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/leftSpaceId"
+                android:layout_weight="0.1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Add A New Book"
+                android:id="@+id/ABAAddANewBookBtnId"
+                android:layout_weight="0.3" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/middleSpaceId"
+                android:layout_weight="0.2"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Add More Books For An Existing Book"
+                android:id="@+id/ABAAddMoreBooksToExistingBtnId"
+                android:layout_weight="0.3" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rightSpaceId"
+                android:layout_weight="0.1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomSpaceId"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

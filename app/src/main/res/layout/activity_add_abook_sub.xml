@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    tools:context="org.dongari.libaccesssw.AddABookSubActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In order to a add book to the library, you need to enter name and author of the book, next chose category of the book, then click ADD buton"
+                android:textSize="18dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter title of the book"
+                android:id="@+id/ABSABookTitleEditTextId"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 +-,.'"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter author of the book"
+                android:id="@+id/ABSABookAuthorEditTextId"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 +-,.'"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <Spinner
+                android:id="@+id/ABSABookCategorySpinnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter number of books"
+                android:id="@+id/ABSANumberOfBooksEditTextId"
+                android:inputType="number"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_weight="1" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_gravity="right"
+                android:id="@+id/ABSAAddBtnId"
+                android:layout_marginTop="10dp"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

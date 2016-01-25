@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    tools:context="org.dongari.libaccesssw.ContactUsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName|textCapWords"
+                android:hint="Your Name"
+                android:ems="10"
+                android:id="@+id/CUAUserNameEditTextId"
+                android:layout_column="0"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:hint="Your email"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:id="@+id/CUAUserEmailEditTextId"
+                android:layout_column="0"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:hint="Your mobile number"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:id="@+id/CUAUserPhoneNumberEditTextId"
+                android:layout_column="0"
+                android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                android:layout_marginTop="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:hint="Problem/Suggestion"
+                    android:background="@drawable/abc_text_cursor_mtrl_alpha"
+                    android:id="@+id/CUAUserSuggestionEditTextId"
+                    android:layout_column="0"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_gravity="center"
+                android:id="@+id/CUASendBtnId"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

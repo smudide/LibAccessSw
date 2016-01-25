@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.dongari.libaccesssw" >
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/las_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".CheckOutActivity"
+            android:label="@string/title_activity_check_out"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".CheckInActivity"
+            android:label="@string/title_activity_check_in"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".AddABookActivity"
+            android:label="AddABook"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".ListAllBooksActivity"
+            android:label="@string/title_activity_list_all_books"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".AddABookSubActivity"
+            android:label="@string/title_activity_add_abook_sub"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".StudentDetailsActivity"
+            android:label="@string/title_activity_student_details"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".IssuedToActivity"
+            android:label="@string/title_activity_issued_to"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".AddMoreBooksActivity"
+            android:label="@string/title_activity_add_more_books"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view"
+            android:noHistory="true">
+        </activity>
+    </application>
+
+</manifest>
